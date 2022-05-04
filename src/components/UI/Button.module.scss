@@ -1,0 +1,20 @@
+.button {
+  padding: 16px 30px;
+  background-color: rgb(224, 224, 224);
+  color: rgb(70, 70, 70);
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: .5s ease all;
+  margin: 10px;
+
+  &:hover {
+    background-color: rgb(7, 96, 254);
+    color: white;
+  }
+}
+
+.secondary {
+  display: none;
+}

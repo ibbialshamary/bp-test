@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options-form {
+  background-color: white;
+  margin: 0 0 10px;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"],
+.secondary {
+  padding: 8px 28px;
+  // border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all ease 0.5s;
+  border-radius: 4px 0px 0px 4px;
+}
+
+input[type="text"] {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: none;
+  &:focus {
+    // border: 1px solid rgba(7, 96, 254, 0.8);
+    outline: none;
+  }
+  width: 50%;
+}
+
+.secondary {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: none;
+  border-radius: 0px 4px 4px 0px;
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+  transition: all ease-in 0.3s;
+
+  &:hover {
+    background-color: rgb(7, 96, 254);
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.error-container, .loading-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.error-content, .loading-content {
+  margin: 20px 0 20px 0;
+  padding: 16px;
+  width: 50%;
+  color: white;
+}
+
+.error-content {
+  background-color: crimson;
+}
+
+.loading-content {
+  background-color: #00fa9a;
+  color: black;
+}
+
+.selected {
+  background-color: rgb(7, 96, 254);
+  color: white;
+}
